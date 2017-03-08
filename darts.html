@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<head>
+    <title>Darts Scoreboard</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> 
+</head>
+<body>
+<div id='ScoreBoard'><div><h1>Player 1 Score:</h1><div id='player1Score'>301</div></div><div><h1>Player 2 Score:</h1><div id='player2Score'>301</div></div></div>
+    <svg id="dartBoard" width="1250" height="1250" >
+    <g id='test'>
+    <circle id="s_0" cx="625" cy="625" r="575" stroke="black" fill="black" ></circle>
+    <circle id="s_25" cx="625" cy="625" r="50" stroke="black" fill="green" ></circle>
+    <circle id="s_50" cx="625" cy="625" r="25" stroke="black" fill="red" > </circle>  
+<path id='s_6' d="M674 617 A 45 45, 1, 0, 1, 674 633 L 872 664 A 250 250, 0 , 0, 0, 872 586" fill="white" ></path>
+<path id='s_10' d="M674 633 A 45 45, 1, 0, 1, 670 648 L 848 738 A 250 250, 0 , 0, 0, 872 664" fill="grey" ></path>
+<path id='s_15' d="M670 648 A 45 45, 1, 0, 1, 660 660 L 802 802 A 250 250, 0 , 0, 0, 848 738" fill="white" ></path>
+<path id='s_2' d="M660 660 A 45 45, 1, 0, 1, 648 670 L 738 848 A 250 250, 0 , 0, 0, 802 802" fill="grey" ></path>
+<path id='s_17' d="M648 670 A 45 45, 1, 0, 1, 633 674 L 664 872 A 250 250, 0 , 0, 0, 738 848" fill="white" ></path>
+<path id='s_3' d="M633 674 A 45 45, 1, 0, 1, 617 674 L 586 872 A 250 250, 0 , 0, 0, 664 872" fill="grey" ></path>
+<path id='s19' d="M617 674 A 45 45, 1, 0, 1, 602 670 L 512 848 A 250 250, 0 , 0, 0, 586 872" fill="white" ></path>
+<path id='s_7' d="M602 670 A 45 45, 1, 0, 1, 590 660 L 448 802 A 250 250, 0 , 0, 0, 512 848" fill="grey" ></path>
+<path id='s_16' d="M590 660 A 45 45, 1, 0, 1, 580 648 L 402 738 A 250 250, 0 , 0, 0, 448 802" fill="white" ></path>
+<path id='s_8' d="M580 648 A 45 45, 1, 0, 1, 576 633 L 378 664 A 250 250, 0 , 0, 0, 402 738" fill="grey" ></path>
+<path id='s_11' d="M576 633 A 45 45, 1, 0, 1, 576 617 L 378 586 A 250 250, 0 , 0, 0, 378 664" fill="white" ></path>
+<path id='s_14' d="M576 617 A 45 45, 1, 0, 1, 580 602 L 402 512 A 250 250, 0 , 0, 0, 378 586" fill="grey" ></path>
+<path id='s_9' d="M580 602 A 45 45, 1, 0, 1, 590 590 L 448 448 A 250 250, 0 , 0, 0, 402 512" fill="white" ></path>
+<path id='s_12' d="M590 590 A 45 45, 1, 0, 1, 602 580 L 512 402 A 250 250, 0 , 0, 0, 448 448" fill="grey" ></path>
+<path id='s_5' d="M602 580 A 45 45, 1, 0, 1, 617 576 L 586 378 A 250 250, 0 , 0, 0, 512 402" fill="white" ></path>
+<path id='s_20' d="M617 576 A 45 45, 1, 0, 1, 633 576 L 664 378 A 250 250, 0 , 0, 0, 586 378" fill="grey" ></path>
+<path id='s_1' d="M633 576 A 45 45, 1, 0, 1, 648 580 L 738 402 A 250 250, 0 , 0, 0, 664 378" fill="white" ></path>
+<path id='s_18' d="M648 580 A 45 45, 1, 0, 1, 660 590 L 802 448 A 250 250, 0 , 0, 0, 738 402" fill="grey" ></path>
+<path id='s_4' d="M660 590 A 45 45, 1, 0, 1, 670 602 L 848 512 A 250 250, 0 , 0, 0, 802 448" fill="white" ></path>
+<path id='s_13' d="M670 602 A 45 45, 1, 0, 1, 674 617 L 872 586 A 250 250, 0 , 0, 0, 848 512" fill="grey" ></path>
+<path id='d_6' d="M872 586 A 250 250, 1, 0, 1, 872 664 L 897 668 A 275 275, 0 , 0, 0, 897 582" fill="green" ></path>
+<path id='d_10' d="M872 664 A 250 250, 1, 0, 1, 848 738 L 870 750 A 275 275, 0 , 0, 0, 897 668" fill="red" ></path>
+<path id='d_15' d="M848 738 A 250 250, 1, 0, 1, 802 802 L 819 819 A 275 275, 0 , 0, 0, 870 750" fill="green" ></path>
+<path id='d_2' d="M802 802 A 250 250, 1, 0, 1, 738 848 L 750 870 A 275 275, 0 , 0, 0, 819 819" fill="red" ></path>
+<path id='d_17' d="M738 848 A 250 250, 1, 0, 1, 664 872 L 668 897 A 275 275, 0 , 0, 0, 750 870" fill="green" ></path>
+<path id='d_3' d="M664 872 A 250 250, 1, 0, 1, 586 872 L 582 897 A 275 275, 0 , 0, 0, 668 897" fill="red" ></path>
+<path id='d_19' d="M586 872 A 250 250, 1, 0, 1, 512 848 L 500 870 A 275 275, 0 , 0, 0, 582 897" fill="green" ></path>
+<path id='d_7' d="M512 848 A 250 250, 1, 0, 1, 448 802 L 431 819 A 275 275, 0 , 0, 0, 500 870" fill="red" ></path>
+<path id='d_16' d="M448 802 A 250 250, 1, 0, 1, 402 738 L 380 750 A 275 275, 0 , 0, 0, 431 819" fill="green" ></path>
+<path id='d_8' d="M402 738 A 250 250, 1, 0, 1, 378 664 L 353 668 A 275 275, 0 , 0, 0, 380 750" fill="red" ></path>
+<path id='d_11' d="M378 664 A 250 250, 1, 0, 1, 378 586 L 353 582 A 275 275, 0 , 0, 0, 353 668" fill="green" ></path>
+<path id='d_14' d="M378 586 A 250 250, 1, 0, 1, 402 512 L 380 500 A 275 275, 0 , 0, 0, 353 582" fill="red" ></path>
+<path id='d_9' d="M402 512 A 250 250, 1, 0, 1, 448 448 L 431 431 A 275 275, 0 , 0, 0, 380 500" fill="green" ></path>
+<path id='d_12' d="M448 448 A 250 250, 1, 0, 1, 512 402 L 500 380 A 275 275, 0 , 0, 0, 431 431" fill="red" ></path>
+<path id='d_5' d="M512 402 A 250 250, 1, 0, 1, 586 378 L 582 353 A 275 275, 0 , 0, 0, 500 380" fill="green" ></path>
+<path id='d_20' d="M586 378 A 250 250, 1, 0, 1, 664 378 L 668 353 A 275 275, 0 , 0, 0, 582 353" fill="red" ></path>
+<path id='d_1' d="M664 378 A 250 250, 1, 0, 1, 738 402 L 750 380 A 275 275, 0 , 0, 0, 668 353" fill="green" ></path>
+<path id='d_18' d="M738 402 A 250 250, 1, 0, 1, 802 448 L 819 431 A 275 275, 0 , 0, 0, 750 380" fill="red" ></path>
+<path id='d_4' d="M802 448 A 250 250, 1, 0, 1, 848 512 L 870 500 A 275 275, 0 , 0, 0, 819 431" fill="green" ></path>
+<path id='d_13' d="M848 512 A 250 250, 1, 0, 1, 872 586 L 897 582 A 275 275, 0 , 0, 0, 870 500" fill="red" ></path>
+<path id='os_6' d="M897 582 A 275 275, 1, 0, 1, 897 668 L 1094 699 A 475 475, 0 , 0, 0, 1094 551" fill="white" ></path>
+<path id='os_10' d="M897 668 A 275 275, 1, 0, 1, 870 750 L 1048 841 A 475 475, 0 , 0, 0, 1094 699" fill="grey" ></path>
+<path id='os_15' d="M870 750 A 275 275, 1, 0, 1, 819 819 L 961 961 A 475 475, 0 , 0, 0, 1048 841" fill="white" ></path>
+<path id='os_2' d="M819 819 A 275 275, 1, 0, 1, 750 870 L 841 1048 A 475 475, 0 , 0, 0, 961 961" fill="grey" ></path>
+<path id='os_17' d="M750 870 A 275 275, 1, 0, 1, 668 897 L 699 1094 A 475 475, 0 , 0, 0, 841 1048" fill="white" ></path>
+<path id='os_3' d="M668 897 A 275 275, 1, 0, 1, 582 897 L 551 1094 A 475 475, 0 , 0, 0, 699 1094" fill="grey" ></path>
+<path id='os_19' d="M582 897 A 275 275, 1, 0, 1, 500 870 L 409 1048 A 475 475, 0 , 0, 0, 551 1094" fill="white" ></path>
+<path id='os_7' d="M500 870 A 275 275, 1, 0, 1, 431 819 L 289 961 A 475 475, 0 , 0, 0, 409 1048" fill="grey" ></path>
+<path id='os_16' d="M431 819 A 275 275, 1, 0, 1, 380 750 L 202 841 A 475 475, 0 , 0, 0, 289 961" fill="white" ></path>
+<path id='os_8' d="M380 750 A 275 275, 1, 0, 1, 353 668 L 156 699 A 475 475, 0 , 0, 0, 202 841" fill="grey" ></path>
+<path id='os_11' d="M353 668 A 275 275, 1, 0, 1, 353 582 L 156 551 A 475 475, 0 , 0, 0, 156 699" fill="white" ></path>
+<path id='os_14' d="M353 582 A 275 275, 1, 0, 1, 380 500 L 202 409 A 475 475, 0 , 0, 0, 156 551" fill="grey" ></path>
+<path id='os_9' d="M380 500 A 275 275, 1, 0, 1, 431 431 L 289 289 A 475 475, 0 , 0, 0, 202 409" fill="white" ></path>
+<path id='os_12' d="M431 431 A 275 275, 1, 0, 1, 500 380 L 409 202 A 475 475, 0 , 0, 0, 289 289" fill="grey" ></path>
+<path id='os_5' d="M500 380 A 275 275, 1, 0, 1, 582 353 L 551 156 A 475 475, 0 , 0, 0, 409 202" fill="white" ></path>
+<path id='os_20' d="M582 353 A 275 275, 1, 0, 1, 668 353 L 699 156 A 475 475, 0 , 0, 0, 551 156" fill="grey" ></path>
+<path id='os_1' d="M668 353 A 275 275, 1, 0, 1, 750 380 L 841 202 A 475 475, 0 , 0, 0, 699 156" fill="white" ></path>
+<path id='os_18' d="M750 380 A 275 275, 1, 0, 1, 819 431 L 961 289 A 475 475, 0 , 0, 0, 841 202" fill="grey" ></path>
+<path id='os_4' d="M819 431 A 275 275, 1, 0, 1, 870 500 L 1048 409 A 475 475, 0 , 0, 0, 961 289" fill="white" ></path>
+<path id='os_13' d="M870 500 A 275 275, 1, 0, 1, 897 582 L 1094 551 A 475 475, 0 , 0, 0, 1048 409" fill="grey" ></path>
+<path id='t_6' d="M1094 551 A 475 475, 1, 0, 1, 1094 699 L 1119 703 A 500 500  , 0 , 0, 0, 1119 547" fill="green" ></path>
+<path id='t_10' d="M1094 699 A 475 475, 1, 0, 1, 1048 841 L 1071 852 A 500 500  , 0 , 0, 0, 1119 703" fill="red" ></path>
+<path id='t_15' d="M1048 841 A 475 475, 1, 0, 1, 961 961 L 979 979 A 500 500  , 0 , 0, 0, 1071 852" fill="green" ></path>
+<path id='t_2' d="M961 961 A 475 475, 1, 0, 1, 841 1048 L 852 1071 A 500 500  , 0 , 0, 0, 979 979" fill="red" ></path>
+<path id='t_17' d="M841 1048 A 475 475, 1, 0, 1, 699 1094 L 703 1119 A 500 500  , 0 , 0, 0, 852 1071" fill="green" ></path>
+<path id='t_3' d="M699 1094 A 475 475, 1, 0, 1, 551 1094 L 547 1119 A 500 500  , 0 , 0, 0, 703 1119" fill="red" ></path>
+<path id='t_19' d="M551 1094 A 475 475, 1, 0, 1, 409 1048 L 398 1071 A 500 500  , 0 , 0, 0, 547 1119" fill="green" ></path>
+<path id='t_7' d="M409 1048 A 475 475, 1, 0, 1, 289 961 L 271 979 A 500 500  , 0 , 0, 0, 398 1071" fill="red" ></path>
+<path id='t_16' d="M289 961 A 475 475, 1, 0, 1, 202 841 L 179 852 A 500 500  , 0 , 0, 0, 271 979" fill="green" ></path>
+<path id='t_8' d="M202 841 A 475 475, 1, 0, 1, 156 699 L 131 703 A 500 500  , 0 , 0, 0, 179 852" fill="red" ></path>
+<path id='t_11' d="M156 699 A 475 475, 1, 0, 1, 156 551 L 131 547 A 500 500  , 0 , 0, 0, 131 703" fill="green" ></path>
+<path id='t_14' d="M156 551 A 475 475, 1, 0, 1, 202 409 L 179 398 A 500 500  , 0 , 0, 0, 131 547" fill="red" ></path>
+<path id='t_9' d="M202 409 A 475 475, 1, 0, 1, 289 289 L 271 271 A 500 500  , 0 , 0, 0, 179 398" fill="green" ></path>
+<path id='t_12' d="M289 289 A 475 475, 1, 0, 1, 409 202 L 398 179 A 500 500  , 0 , 0, 0, 271 271" fill="red" ></path>
+<path id='t_5' d="M409 202 A 475 475, 1, 0, 1, 551 156 L 547 131 A 500 500  , 0 , 0, 0, 398 179" fill="green" ></path>
+<path id='t_20' d="M551 156 A 475 475, 1, 0, 1, 699 156 L 703 131 A 500 500  , 0 , 0, 0, 547 131" fill="red" ></path>
+<path id='t_1' d="M699 156 A 475 475, 1, 0, 1, 841 202 L 852 179 A 500 500  , 0 , 0, 0, 703 131" fill="green" ></path>
+<path id='t_18' d="M841 202 A 475 475, 1, 0, 1, 961 289 L 979 271 A 500 500  , 0 , 0, 0, 852 179" fill="red" ></path>
+<path id='t_4' d="M961 289 A 475 475, 1, 0, 1, 1048 409 L 1071 398 A 500 500  , 0 , 0, 0, 979 271" fill="green" ></path>
+<path id='t_13' d="M1048 409 A 475 475, 1, 0, 1, 1094 551 L 1119 547 A 500 500  , 0 , 0, 0, 1071 398" fill="red" ></path>
+<path id="z_6" d="M1119 547 A 500 500, 1, 0, 1, 1119 703 L 1242 723 A 625 625  , 0 , 0, 0, 1242 527" fill="transparent" />
+<path id="z_10" d="M1119 703 A 500 500, 1, 0, 1, 1071 852 L 1182 909 A 625 625  , 0 , 0, 0, 1242 723" fill="transparent" />
+<path id="z_15" d="M1071 852 A 500 500, 1, 0, 1, 979 979 L 1067 1067 A 625 625  , 0 , 0, 0, 1182 909" fill="transparent" />
+<path id="z_2" d="M979 979 A 500 500, 1, 0, 1, 852 1071 L 909 1182 A 625 625  , 0 , 0, 0, 1067 1067" fill="transparent" />
+<path id="z_17" d="M852 1071 A 500 500, 1, 0, 1, 703 1119 L 723 1242 A 625 625  , 0 , 0, 0, 909 1182" fill="transparent" />
+<path id="z_3" d="M703 1119 A 500 500, 1, 0, 1, 547 1119 L 527 1242 A 625 625  , 0 , 0, 0, 723 1242" fill="transparent" />
+<path id="z_19" d="M547 1119 A 500 500, 1, 0, 1, 398 1071 L 341 1182 A 625 625  , 0 , 0, 0, 527 1242" fill="transparent" />
+<path id="z_7" d="M398 1071 A 500 500, 1, 0, 1, 271 979 L 183 1067 A 625 625  , 0 , 0, 0, 341 1182" fill="transparent" />
+<path id="z_16" d="M271 979 A 500 500, 1, 0, 1, 179 852 L 68 909 A 625 625  , 0 , 0, 0, 183 1067" fill="transparent" />
+<path id="z_8" d="M179 852 A 500 500, 1, 0, 1, 131 703 L 8 723 A 625 625  , 0 , 0, 0, 68 909" fill="transparent" />
+<path id="z_11" d="M131 703 A 500 500, 1, 0, 1, 131 547 L 8 527 A 625 625  , 0 , 0, 0, 8 723" fill="transparent" />
+<path id="z_14" d="M131 547 A 500 500, 1, 0, 1, 179 398 L 68 341 A 625 625  , 0 , 0, 0, 8 527" fill="transparent" />
+<path id="z_9" d="M179 398 A 500 500, 1, 0, 1, 271 271 L 183 183 A 625 625  , 0 , 0, 0, 68 341" fill="transparent" />
+<path id="z_12" d="M271 271 A 500 500, 1, 0, 1, 398 179 L 341 68 A 625 625  , 0 , 0, 0, 183 183" fill="transparent" />
+<path id="z_5" d="M398 179 A 500 500, 1, 0, 1, 547 131 L 527 8 A 625 625  , 0 , 0, 0, 341 68" fill="transparent" />
+<path id="z_20" d="M547 131 A 500 500, 1, 0, 1, 703 131 L 723 8 A 625 625  , 0 , 0, 0, 527 8" fill="transparent" />
+<path id="z_1" d="M703 131 A 500 500, 1, 0, 1, 852 179 L 909 68 A 625 625  , 0 , 0, 0, 723 8" fill="transparent" />
+<path id="z_18" d="M852 179 A 500 500, 1, 0, 1, 979 271 L 1067 183 A 625 625  , 0 , 0, 0, 909 68" fill="transparent" />
+<path id="z_4" d="M979 271 A 500 500, 1, 0, 1, 1071 398 L 1182 341 A 625 625  , 0 , 0, 0, 1067 183" fill="transparent" />
+<path id="z_13" d="M1071 398 A 500 500, 1, 0, 1, 1119 547 L 1242 527 A 625 625  , 0 , 0, 0, 1182 341" fill="transparent" />
+  <text font-family="Verdana" text-anchor="middle" font-size="42.5" fill="White" >
+<textPath startOffset="15%" xlink:href="#z_1">1</textPath>
+<textPath startOffset="15%" xlink:href="#z_2">2</textPath>
+<textPath startOffset="15%" xlink:href="#z_3">3</textPath>
+<textPath startOffset="15%" xlink:href="#z_4">4</textPath>
+<textPath startOffset="15%" xlink:href="#z_5">5</textPath>
+<textPath startOffset="15%" xlink:href="#z_6">6</textPath>
+<textPath startOffset="15%" xlink:href="#z_7">7</textPath>
+<textPath startOffset="15%" xlink:href="#z_8">8</textPath>
+<textPath startOffset="15%" xlink:href="#z_9">9</textPath>
+<textPath startOffset="15%" xlink:href="#z_10">10</textPath>
+<textPath startOffset="15%" xlink:href="#z_11">11</textPath>
+<textPath startOffset="15%" xlink:href="#z_12">12</textPath>
+<textPath startOffset="15%" xlink:href="#z_13">13</textPath>
+<textPath startOffset="15%" xlink:href="#z_14">14</textPath>
+<textPath startOffset="15%" xlink:href="#z_15">15</textPath>
+<textPath startOffset="15%" xlink:href="#z_16">16</textPath>
+<textPath startOffset="15%" xlink:href="#z_17">17</textPath>
+<textPath startOffset="15%" xlink:href="#z_18">18</textPath>
+<textPath startOffset="15%" xlink:href="#z_19">19</textPath>
+<textPath startOffset="15%" xlink:href="#z_20">20</textPath>
+  </text>
+    </g></svg>
+
+
+
+</body>
+    <script src="darts.js"></script>    
+</html>

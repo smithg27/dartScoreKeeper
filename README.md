@@ -1,0 +1,2 @@
+# dartScoreKeeper
+An HTML/JavaScript app to keep track of your score for darts with an interactive board. Right now a work in progress to add more games, alert people if win conditions are met/who's turn it is/what game is being played etc., and make visuall more pleasing overall. Pick a game, then a dart board and score board should appear. Clicking on the dartboard counts as a dart thrown. After three throws a players score is updated and it is the next players turn.
